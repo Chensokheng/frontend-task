@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project Lab</title>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__nav">
+				<div class="header__navWrapper">
+					<div class="header__logoContainer">
+						<svg
+							id="hamburger_icon"
+							class="header__hamburgerIcon"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+						<img src="/image/logo.png" width="50px" height="50px" />
+					</div>
+					<ul class="header__list" id="header_list">
+						<li class="header__listItem">
+							<a class="header__link" href="#">Link 1</a>
+						</li>
+						<li class="header__listItem">
+							<a class="header__link" href="#">Link 2</a>
+						</li>
+						<li class="header__listItem">
+							<a class="header__link" href="#">Link 3</a>
+						</li>
+						<li class="header__listItem">
+							<a class="header__link" href="#">Link 4</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header__container">
+				<h1 class="header__title">Travel To OverSea</h1>
+				<button class="header__button">Contact Us</button>
+			</div>
+		</header>
+		<main class="main">
+			<h1 class="main__title">Place to visit</h1>
+			<section class="main__firstSection main__section">
+				<div class="main__firstImageContainer main__imageContiner">
+					<img
+						src="/image/section-photo-1.jpg"
+						class="main__firstSectionIamge"
+					/>
+				</div>
+				<p class="main__firstDesc main__desc">
+					Lorem Ipsum is simply dummy text of the printing and typesetting
+					industry. Lorem Ipsum has been the industry's standard dummy text ever
+					since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only
+					five centuries, but also the leap into electronic typesetting,
+					remaining essentially unchanged. It was popularised in the 1960s with.
+				</p>
+			</section>
+			<section class="main__secondSection main__section">
+				<p class="main__secondDesc main__desc">
+					Lorem Ipsum is simply dummy text of the printing and typesetting
+					industry. Lorem Ipsum has been the industry's standard dummy text ever
+					since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only
+					five centuries, but also the leap into electronic typesetting,
+					remaining essentially unchanged. It was popularised in the 1960s with.
+				</p>
+				<div class="main__secondImageContainer main__imageContiner">
+					<img
+						src="/image/section-photo-2.jpg"
+						class="main__secondSectionIamge"
+					/>
+				</div>
+			</section>
+		</main>
+
+		<section class="contact">
+			<h1 class="contact__title">Contact Form</h1>
+			<form class="contact__form">
+				<input type="text" name="name" placeholder="Username" id="input_name" />
+				<input type="email" name="email" placeholder="Email" id="input_email" />
+				<textarea
+					type="text"
+					name="description"
+					placeholder="Description"
+					id="input_description"
+				></textarea>
+				<button id="btn_submit">Submit</button>
+			</form>
+		</section>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__contactContainer">
+					<div class="footer__wrapper">
+						<svg
+							class="footer__icon"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+							></path>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+							></path>
+						</svg>
+						<span>Address</span>
+					</div>
+					<div class="footer__wrapper">
+						<svg
+							class="footer__icon"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+							></path>
+						</svg>
+						<span>Phone</span>
+					</div>
+					<div class="footer__wrapper">
+						<svg
+							class="footer__icon"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+							></path>
+						</svg>
+						<span>Email</span>
+					</div>
+				</div>
+				<div class="footer__linkList">
+					<a class="footer__link" href="#">Link 1</a>
+					<a class="footer__link" href="#">Link 3</a>
+					<a class="footer__link" href="#">Link 5</a>
+				</div>
+				<div class="footer__linkList">
+					<a class="footer__link" href="#">Link 2</a>
+					<a class="footer__link" href="#">Link 4</a>
+					<a class="footer__link" href="#">Link 6</a>
+				</div>
+			</div>
+			<hr class="footer__line" />
+			<p class="footer__copyright">&#169; copyright</p>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

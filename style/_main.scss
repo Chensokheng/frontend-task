@@ -1,0 +1,96 @@
+.main {
+	padding-top: 30px;
+	min-height: 100vh;
+	&__title {
+		text-align: center;
+		margin: 2rem 0rem;
+	}
+	&__section {
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&__desc {
+		padding: 30px;
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+	}
+
+	&__imageContiner {
+		position: relative;
+		padding-top: 25%;
+	}
+	&__firstImageContainer {
+		width: 60%;
+	}
+	&__secondImageContainer {
+		width: 40%;
+	}
+
+	&__firstSection {
+		width: 90%;
+	}
+
+	&__firstSectionIamge {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -100px;
+	}
+	&__firstDesc {
+		width: 40%;
+	}
+
+	&__secondSection {
+		width: 80%;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	&__secondSectionIamge {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	&__secondDesc {
+		width: 50%;
+	}
+}
+
+@media (max-width: 900px) {
+	.main {
+		&__firstSection {
+			flex-direction: column;
+			width: 100%;
+		}
+		&__secondSection {
+			flex-direction: column-reverse;
+			width: 100%;
+		}
+
+		&__imageContiner {
+			padding-top: 60%;
+		}
+		&__firstImageContainer {
+			width: 100%;
+		}
+		&__secondImageContainer {
+			width: 100%;
+		}
+		&__firstSectionIamge {
+			left: 0;
+		}
+		&__firstDesc {
+			width: 100%;
+		}
+		&__secondDesc {
+			width: 100%;
+		}
+	}
+}

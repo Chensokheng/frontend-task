@@ -1,0 +1,45 @@
+.footer {
+	background: $backgrondColor;
+	color: #fff;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	&__icon {
+		width: 35px;
+		height: 35px;
+	}
+	&__contactContainer {
+		flex-grow: 1;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__linkList {
+		display: flex;
+		flex-direction: column;
+		margin-right: 20px;
+	}
+	&__link {
+		color: #fff;
+		margin-top: 15px;
+		text-decoration: none;
+	}
+	&__line {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__copyright {
+		text-align: center;
+		padding: 1rem 0;
+	}
+}

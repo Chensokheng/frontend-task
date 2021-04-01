@@ -1,0 +1,112 @@
+.header {
+	background-image: url('/image/head-cover.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	place-content: center;
+	text-align: center;
+	&__nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		background-color: $backgrondColor;
+		color: #fff;
+	}
+	&__navWrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+	&__logoContainer {
+		display: flex;
+		align-items: center;
+	}
+	&__hamburgerIcon {
+		width: 50px;
+		height: 50px;
+		display: none;
+	}
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__listItem {
+		margin-right: 1rem;
+	}
+	&__link {
+		text-decoration: none;
+		color: inherit;
+		transition: 0.5s;
+		&:hover {
+			letter-spacing: 1px;
+		}
+	}
+
+	&__title {
+		font-size: 5rem;
+		color: #fff;
+	}
+
+	&__button {
+		margin-top: 1rem;
+		padding: 15px 35px;
+		font-size: 1rem;
+		background-color: $backgrondColor;
+		color: #fff;
+		border: none;
+		transition: 0.2s;
+		cursor: pointer;
+		border-radius: 5px;
+		outline: none;
+		&:hover {
+			letter-spacing: 1px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-phone) {
+	.header {
+		&__title {
+			font-size: 4rem;
+		}
+		&__navWrapper {
+			width: 95%;
+			flex-direction: column;
+			align-items: start;
+		}
+		&__logoContainer {
+			width: 100%;
+			justify-content: space-between;
+		}
+		&__hamburgerIcon {
+			display: block;
+			cursor: pointer;
+		}
+		&__list {
+			display: none;
+			flex-direction: column;
+			margin-left: 5px;
+			width: 100%;
+			&.--active {
+				display: flex;
+			}
+		}
+
+		&__listItem {
+			margin-top: 20px;
+			width: 100%;
+			padding: 10px 2px;
+			text-align: start;
+			cursor: pointer;
+			&:hover {
+				background-color: #1f2937;
+			}
+		}
+	}
+}
